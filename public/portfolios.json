@@ -1,0 +1,23 @@
+[
+    {
+        "_id": 1,
+        "name": "Synergy 44",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta.  Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus.",
+        "tech": ["WordPress", "Elementor"],
+        "img": "https://i.ibb.co/MZj2y5T/portfolio1.jpg"
+    },
+    {
+        "_id": 2,
+        "name": "BookstallBd",
+        "description": "Lorem ipsum dolor sit amet, consectetur adi elitproni. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta.  Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus.",
+        "tech": ["React", "Node"],
+        "img": "https://i.ibb.co/82rkxdW/portfolio3.png"
+    },
+    {
+        "_id": 3,
+        "name": "Akhlak Traders",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta.  Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus.",
+        "tech": ["WordPress", "Next"],
+        "img": "https://i.ibb.co/MZj2y5T/portfolio1.jpg"
+    }
+]
