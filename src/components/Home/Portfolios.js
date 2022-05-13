@@ -14,6 +14,7 @@ const Portfolios = () => {
             <h2 className="text-center text-5xl my-8 font-extralight">
                 My Portfolios
             </h2>
+
             <div className="tabs bg-transparent tabs-boxed flex justify-center gap-8">
                 <a href=" " className="tab tab-active">
                     All

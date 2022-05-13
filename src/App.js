@@ -5,15 +5,13 @@ import Navbar from "./components/Shared/Navbar";
 
 function App() {
     return (
-        <div>
-            <Navbar>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/home" element={<Home />} />
-                </Routes>
-                <Footer />
-            </Navbar>
-        </div>
+        <Navbar>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+            </Routes>
+            <Footer />
+        </Navbar>
     );
 }
 
