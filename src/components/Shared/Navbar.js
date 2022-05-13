@@ -8,7 +8,7 @@ const Navbar = ({ children }) => {
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 <div
-                    className="w-full fixed top-0 lg:px-28 navbar"
+                    className="w-full z-10 fixed top-0 lg:px-28 navbar"
                     style={{
                         backgroundColor: "#F5F5F5",
                     }}
@@ -42,9 +42,9 @@ const Navbar = ({ children }) => {
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
                             <li>
-                                <NavLink to="/home" className="rounded-lg">
+                                <a href="#hero" className="rounded-lg">
                                     Home
-                                </NavLink>
+                                </a>
                             </li>
                             <li>
                                 <a href="#about" className="rounded-lg">
@@ -54,6 +54,11 @@ const Navbar = ({ children }) => {
                             <li>
                                 <a href="#portfolio" className="rounded-lg">
                                     Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" className="rounded-lg">
+                                    Contact
                                 </a>
                             </li>
                         </ul>
@@ -72,6 +77,16 @@ const Navbar = ({ children }) => {
                     <li>
                         <a href="#portfolio" className="rounded-lg">
                             Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" className="rounded-lg">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" className="rounded-lg">
+                            Contact
                         </a>
                     </li>
                 </ul>

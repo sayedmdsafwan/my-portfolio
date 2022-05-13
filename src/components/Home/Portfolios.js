@@ -10,7 +10,7 @@ const Portfolios = () => {
     }, []);
 
     return (
-        <div id="portfolio" className="mx-auto w-4/5 my-10 min-h-screen">
+        <div id="portfolio" className="mx-auto w-4/5 pt-28 mb-10 min-h-screen">
             <h2 className="text-center text-5xl my-8 font-extralight">
                 My Portfolios
             </h2>
@@ -39,15 +39,22 @@ const Portfolios = () => {
                                 />
                             </figure>
                             <div className="card-body">
-                                <h2 className="card-title">{portfolio.name}</h2>
-                                <p>
-                                    {portfolio.description.slice(0, 50) + "..."}
-                                </p>
-                                <div className="card-actions my-4">
+                                <div className="">
+                                    <span className="badge badge-sm badge-outline">
+                                        {portfolio.type}
+                                    </span>
+                                </div>
+                                <h2 className="card-title text-3xl font-extralight">
+                                    {portfolio.name}
+                                </h2>
+                                <small>
+                                    {portfolio.description.slice(0, 60)}
+                                </small>
+                                <div className="card-actions my-2">
                                     {portfolio.tech.map((t, index) => (
                                         <div
                                             key={index}
-                                            className="badge badge-secondary"
+                                            className="badge badge-sm badge-secondary"
                                         >
                                             {t}
                                         </div>

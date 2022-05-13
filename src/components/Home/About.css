@@ -1,0 +1,7 @@
+.full-width-class-by-safwan {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -80vw;
+}
