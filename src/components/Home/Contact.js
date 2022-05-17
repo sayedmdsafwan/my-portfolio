@@ -58,14 +58,14 @@ const Contact = () => {
                 </div>
                 <div>
                     <img src={contactImg} alt="contact svg" />
-                    <div className="mt-8 flex items-center gap-1 text-secondary">
+                    <div className="mt-8 flex items-center gap-1 text-primary">
                         <GoLocation />
-                        <span>1901 Thornridge Cir. Shiloh, Hawaii 81063</span>
+                        <span>88, East Kazipara, Mirpur, Dhaka, 1216</span>
                     </div>
-                    <div className="mt-2 flex items-center gap-1 text-secondary">
+                    <div className="mt-2 flex items-center gap-1 text-primary">
                         <BsTelephone /> <span>+880 1867 841109</span>
                     </div>
-                    <div className="mt-2 flex items-center gap-1 text-secondary">
+                    <div className="mt-2 flex items-center gap-1 text-primary">
                         <BiEnvelope /> <span>sayedmdsafwan@gmail.com</span>
                     </div>
                     <div className="flex gap-4 mt-4 text-secondary">
@@ -74,14 +74,14 @@ const Contact = () => {
                             rel="noreferrer"
                             href="https://facebook.com/safwan.sayed.09"
                         >
-                            <BsFacebook size={42} />
+                            <BsFacebook size={28} />
                         </a>
                         <a
                             target="_blank"
                             rel="noreferrer"
                             href="https://www.linkedin.com/in/safwan404/"
                         >
-                            <BsLinkedin size={42} />
+                            <BsLinkedin size={28} />
                         </a>
                     </div>
                 </div>
