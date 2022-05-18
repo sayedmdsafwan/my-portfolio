@@ -1,98 +1,69 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 
-const Navbar = ({ children }) => {
+function Navbar() {
     return (
-        <div className="drawer drawer-end bg-[#F5F5F5]">
-            <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content flex flex-col">
-                <div
-                    className="w-full z-10 fixed top-0 lg:px-28 navbar"
-                    style={{
-                        backgroundColor: "#F5F5F5",
-                    }}
-                >
-                    <div className="flex-1 px-2 mx-2">
-                        <NavLink to="/">
-                            <img src={logo} className="w-36" alt="" />
-                        </NavLink>
-                    </div>
-                    <div className="flex-none lg:hidden">
-                        <label
-                            htmlFor="my-drawer-3"
-                            className="btn btn-square btn-ghost"
+        <div class="navbar fixed top-0 z-10 lg:px-32 px-6 bg-[#f5f5f5]">
+            <div class="navbar-start w-full flex justify-between">
+                <Link to="/">
+                    <img className="w-32" src={logo} alt="" />
+                </Link>
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
                         >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                className="inline-block w-6 h-6 stroke-current"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h16M4 18h16"
-                                ></path>
-                            </svg>
-                        </label>
-                    </div>
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M4 6h16M4 12h16m-7 6h7"
+                            />
+                        </svg>
+                    </label>
+                    <ul
+                        tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                    >
+                        <li>
+                            <a href="#hero">Home</a>
+                        </li>
 
-                    <div className="flex-none hidden lg:block">
-                        <ul className="menu menu-horizontal">
-                            <li>
-                                <a href="#hero" className="rounded-lg">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#about" className="rounded-lg">
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#portfolio" className="rounded-lg">
-                                    Portfolio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#contact" className="rounded-lg">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                {children}
             </div>
-            <div className="drawer-side">
-                <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-                <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal p-0">
                     <li>
-                        <a href="#about" className="rounded-lg">
-                            About
-                        </a>
+                        <a href="#hero">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#portfolio" className="rounded-lg">
-                            Portfolio
-                        </a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#portfolio" className="rounded-lg">
-                            Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" className="rounded-lg">
-                            Contact
-                        </a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     );
-};
+}
 
 export default Navbar;

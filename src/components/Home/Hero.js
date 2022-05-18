@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <div
             id="hero"
-            className="hero mt-16 lg:-mb-32 -mb-44 min-h-screen bg-[#F5F5F5]"
+            className="hero mt-16 lg:-mb-36 -mb-40 min-h-screen bg-[#F5F5F5]"
         >
             <div className="hero-content text-center">
                 <div className="max-w-md lg:max-w-3xl">
