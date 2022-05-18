@@ -37,7 +37,10 @@ const Portfolios = () => {
                                         {portfolio.name}
                                     </h2>
                                     <small>
-                                        {portfolio.description.slice(0, 60)}
+                                        {portfolio.description.replace(
+                                            /^(.{50}[^\s]*).*/,
+                                            "$1"
+                                        )}
                                     </small>
                                     <div className="card-actions my-2">
                                         {portfolio.tech.map((t, index) => (
