@@ -12,9 +12,11 @@ const Hero = () => {
                         I love to visualize ideas and make them live into
                         websites
                     </h1>
-                    <button className="btn btn-outline btn-primary">
-                        Contact Me
-                    </button>
+                    <a href="#contact">
+                        <button className="btn btn-outline btn-primary">
+                            Contact Me
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
