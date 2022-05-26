@@ -68,16 +68,16 @@ const About = () => {
                                 FRONTEND DEVELOPER AND UI UX EXPERT
                             </span>
                             <p className="mt-5 tracking-wider">
-                                Amet minim mollit non deserunt ullamco est sit
-                                aliqua dolor do amet sint. Velit officia
-                                consequat duis enim velit mollit. Exercitation
-                                veniam consequat sunt nostrud amet.
+                                I loved designing things, so I started designing
+                                websites to improve my skills. This meant that I
+                                had to create something new every week, which
+                                was a little better for each project.
                             </p>
                             <p className="my-5 tracking-wider">
-                                Amet minim mollit non deserunt ullamco est sit
-                                aliqua dolor do amet sint. Velit officia
-                                consequat duis enim velit mollit. Exercitation
-                                veniam consequat sunt nostrud amet.
+                                I've heard of WordPress before, but I haven't
+                                really looked into it. It all changed when we
+                                decided it was time to expand our skill set to
+                                realize our website design project.
                             </p>
                         </div>
                     </div>

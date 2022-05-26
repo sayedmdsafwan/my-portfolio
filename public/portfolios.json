@@ -2,25 +2,49 @@
     {
         "_id": 1,
         "name": "Synergy 44",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta.  Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus.",
+        "description": "This is an E-Commerce website. One of my client name Cynthia from USA, told me to build a website for her. She has a business of hair products. I built this E-Commerce website for her in 2021",
         "tech": ["WordPress", "Elementor"],
-        "img": "https://i.ibb.co/MZj2y5T/portfolio1.jpg",
+        "img": "https://i.ibb.co/x5JY0GT/synergy.jpg",
         "type": "E-Commerce"
     },
     {
         "_id": 2,
         "name": "BookstallBd",
-        "description": "Lorem ipsum dolor sit amet, consectetur adi elitproni. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta.  Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus.",
-        "tech": ["React", "Node"],
-        "img": "https://i.ibb.co/82rkxdW/portfolio3.png",
-        "type": "Blog"
+        "description": "This is a Bangladeshi website. This isn't a production ready website. I'm still working on it. I'm building this website for one of my friend. His name is Sakibul Islam. He has a business of books",
+        "tech": ["WordPress", "Elementor"],
+        "img": "https://i.ibb.co/zGfN0qB/Book-Stall-Bd.jpg",
+        "type": "E-Commerce"
     },
     {
         "_id": 3,
         "name": "Akhlak Traders",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta.  Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus.",
-        "tech": ["WordPress", "Next"],
-        "img": "https://i.ibb.co/MZj2y5T/portfolio1.jpg",
-        "type": "UI/UX"
+        "description": "One of my neighbour told me build a website for his T-Shirt business. I built this for him.",
+        "tech": ["WordPress", "Elementor"],
+        "img": "https://i.ibb.co/3kGyRFg/akhlak.jpg",
+        "type": "E-Commerce"
+    },
+    {
+        "_id": 4,
+        "name": "Cuebites",
+        "description": "I got my first job in here. In cuebites, they ordered me to build their website with a new look. I built this with WordPress.",
+        "tech": ["WordPress", "Elementor"],
+        "img": "https://i.ibb.co/w4mx79s/Cuebites.jpg",
+        "type": "Creative Agency"
+    },
+    {
+        "_id": 5,
+        "name": "Darul Insan Madrasa",
+        "description": "My beloved Teacher name Delwar Hossain asked me build a website for his madrasa. I built this for him. It was an amazing journey with him. I feel proud to work for my ustad.",
+        "tech": ["WordPress", "JetEngine"],
+        "img": "https://i.ibb.co/VDjmBgJ/darulinsan.jpg",
+        "type": "Education"
+    },
+    {
+        "_id": 6,
+        "name": "IT Magnet",
+        "description": "Another Australian client asked my team to redesign their website. I built this for him.",
+        "tech": ["WordPress", "Elementor"],
+        "img": "https://i.ibb.co/XbGswzz/IT-Magnet.jpg",
+        "type": "Creative Agency"
     }
 ]

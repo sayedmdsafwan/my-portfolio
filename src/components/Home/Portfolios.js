@@ -1,14 +1,29 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Loading from "../Shared/Loading";
 
 const Portfolios = () => {
     const [portfolios, setPortfolios] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    const navigate = useNavigate();
+
+    const navigateToPortfolioDetail = (id) => {
+        navigate(`/portfolio/${id}`);
+    };
 
     useEffect(() => {
-        fetch("portfolios.json")
+        fetch("https://demo-portfolio-safwan.herokuapp.com/portfolios")
             .then((res) => res.json())
-            .then((data) => setPortfolios(data));
+            .then((data) => {
+                setPortfolios(data);
+                setLoading(false);
+            });
     }, []);
+
+    if (loading) {
+        return <Loading />;
+    }
 
     return (
         <div id="portfolio" className="mx-auto w-4/5 pt-28 mb-10 min-h-screen">
@@ -29,11 +44,11 @@ const Portfolios = () => {
                                 </figure>
                                 <div className="card-body">
                                     <div className="">
-                                        <span className="badge badge-sm badge-outline">
+                                        <span className="badge badge-md badge-outline">
                                             {portfolio.type}
                                         </span>
                                     </div>
-                                    <h2 className="card-title text-3xl font-extralight">
+                                    <h2 className="card-title text-2xl font-light">
                                         {portfolio.name}
                                     </h2>
                                     <small>
@@ -41,6 +56,7 @@ const Portfolios = () => {
                                             /^(.{50}[^\s]*).*/,
                                             "$1"
                                         )}
+                                        ...
                                     </small>
                                     <div className="card-actions my-2">
                                         {portfolio.tech.map((t, index) => (
@@ -52,13 +68,21 @@ const Portfolios = () => {
                                             </div>
                                         ))}
                                     </div>
-                                    <button className="btn btn-outline btn-primary">
+                                    <button
+                                        onClick={() =>
+                                            navigateToPortfolioDetail(
+                                                portfolio._id
+                                            )
+                                        }
+                                        className="btn btn-outline btn-primary"
+                                    >
                                         See Details
                                     </button>
                                 </div>
                             </div>
                         </div>
                     ))
+                    .reverse()
                     .slice(0, 3)}
             </div>
             <Link to="/allportfolio">

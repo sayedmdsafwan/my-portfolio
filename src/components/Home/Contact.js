@@ -6,11 +6,11 @@ import { BiEnvelope } from "react-icons/bi";
 
 const Contact = () => {
     return (
-        <div id="contact" className="my-20 pt-12 px-6 lg:px-32">
+        <div id="contact" className="my-20  px-6 lg:px-32">
             <h2 className="text-center text-5xl my-14 font-extralight">
                 Contact Me
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-20">
                 <div>
                     <h3 className="text-4xl mb-3 font-extralight capitalize">
                         Let's Talk
