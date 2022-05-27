@@ -1,27 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useQuery } from "react-query";
 import { useNavigate } from "react-router-dom";
 import Loading from "../Shared/Loading";
 import NavbarOther from "../Shared/NavbarOther";
 
 const AllPortfolios = () => {
-    const [portfolios, setPortfolios] = useState([]);
-    const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
 
     const navigateToPortfolioDetail = (id) => {
         navigate(`/portfolio/${id}`);
     };
 
-    useEffect(() => {
-        fetch("https://demo-portfolio-safwan.herokuapp.com/portfolios")
-            .then((res) => res.json())
-            .then((data) => {
-                setPortfolios(data);
-                setLoading(false);
-            });
-    }, []);
+    const { isLoading, data: portfolios } = useQuery("portfolioDT", () =>
+        fetch("https://demo-portfolio-safwan.herokuapp.com/portfolios").then(
+            (res) => res.json()
+        )
+    );
 
-    if (loading) {
+    if (isLoading) {
         return <Loading />;
     }
 

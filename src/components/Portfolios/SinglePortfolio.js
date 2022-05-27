@@ -1,25 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
 import Loading from "../Shared/Loading";
 import NavbarOther from "../Shared/NavbarOther";
 
 const SinglePortfolio = () => {
     const { portfolioId } = useParams();
-    const [portfolio, setPortfolio] = useState({});
-    const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        fetch(
-            `https://demo-portfolio-safwan.herokuapp.com/portfolio/${portfolioId}`
-        )
-            .then((res) => res.json())
-            .then((data) => {
-                setPortfolio(data);
-                setLoading(false);
-            });
-    }, [portfolioId]);
+    const { isLoading, data: portfolio } = useQuery(
+        ["singlePortfolio", portfolioId],
+        () =>
+            fetch(
+                `https://demo-portfolio-safwan.herokuapp.com/portfolio/${portfolioId}`
+            ).then((res) => res.json())
+    );
 
-    if (loading) {
+    if (isLoading) {
         return <Loading />;
     }
 
