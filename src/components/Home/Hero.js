@@ -6,7 +6,7 @@ const Hero = () => {
             id="hero"
             className="hero mt-16 lg:-mb-36 -mb-40 min-h-screen bg-[#F5F5F5]"
         >
-            <div className="hero-content text-center">
+            <div className="hero-content text-center mb-20">
                 <div className="max-w-md lg:max-w-3xl">
                     <h3 className="text-2xl font-light text-primary mb-4">
                         Hi, this is Safwan
@@ -23,7 +23,7 @@ const Hero = () => {
                     <a
                         target="_blank"
                         rel="noreferrer"
-                        href="https://drive.google.com/file/d/1v01-IJJ272vvBxBih7YxjU4LdvyWuICt/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1lkw9TkXeC5319fDeyzjjekDpC822klYu/view?usp=sharing"
                     >
                         <button className="btn btn-outline ml-2 btn-secondary">
                             Download CV
