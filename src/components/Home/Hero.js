@@ -23,7 +23,7 @@ const Hero = () => {
                     <a
                         target="_blank"
                         rel="noreferrer"
-                        href="https://drive.google.com/file/d/1lkw9TkXeC5319fDeyzjjekDpC822klYu/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1xW89ZNvqB4WE_jjXzey8s58W-VxLCsPn/view?usp=sharing"
                     >
                         <button className="btn btn-outline ml-2 btn-secondary">
                             Download CV
