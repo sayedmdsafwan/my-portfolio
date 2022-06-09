@@ -23,7 +23,7 @@ const Portfolios = () => {
     return (
         <div id="portfolio" className="mx-auto w-4/5 pt-28 mb-10 min-h-screen">
             <h2 className="text-center text-5xl my-8 font-extralight">
-                My Portfolios
+                My Projects
             </h2>
 
             <div className="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

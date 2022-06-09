@@ -13,7 +13,8 @@
         "description": "This is a Bangladeshi website. This isn't a production ready website. I'm still working on it. I'm building this website for one of my friend. His name is Sakibul Islam. He has a business of books",
         "tech": ["WordPress", "Elementor"],
         "img": "https://i.ibb.co/zGfN0qB/Book-Stall-Bd.jpg",
-        "type": "E-Commerce"
+        "type": "E-Commerce",
+        "liveLink": "http://bookstallbd.com/"
     },
     {
         "_id": 3,
@@ -29,7 +30,8 @@
         "description": "I got my first job in here. In cuebites, they ordered me to build their website with a new look. I built this with WordPress.",
         "tech": ["WordPress", "Elementor"],
         "img": "https://i.ibb.co/w4mx79s/Cuebites.jpg",
-        "type": "Creative Agency"
+        "type": "Creative Agency",
+        "liveLink": "https://cuebites.com.au/"
     },
     {
         "_id": 5,
@@ -37,7 +39,8 @@
         "description": "My beloved Teacher name Delwar Hossain asked me build a website for his madrasa. I built this for him. It was an amazing journey with him. I feel proud to work for my ustad.",
         "tech": ["WordPress", "JetEngine"],
         "img": "https://i.ibb.co/VDjmBgJ/darulinsan.jpg",
-        "type": "Education"
+        "type": "Education",
+        "liveLink": "https://darul-insan.org/"
     },
     {
         "_id": 6,
@@ -45,6 +48,25 @@
         "description": "Another Australian client asked my team to redesign their website. I built this for him.",
         "tech": ["WordPress", "Elementor"],
         "img": "https://i.ibb.co/XbGswzz/IT-Magnet.jpg",
-        "type": "Creative Agency"
+        "type": "Creative Agency",
+        "liveLink": "https://www.itmagnet.com.au/"
+    },
+    {
+        "_id": 7,
+        "name": "Fruits Warehouse",
+        "description": "This is one of my react project made with react, react-router, react-query, and react-bootstrap. I also use expressjs and mongoDB in this website.",
+        "tech": ["React", "MongoDB", "ExpressJS"],
+        "img": "https://i.ibb.co/55LPctC/fruits-warehouse.jpg",
+        "type": "Sevice",
+        "liveLink": "https://fruits-ninja.web.app/"
+    },
+    {
+        "_id": 8,
+        "name": "MotoParts BD",
+        "description": "This is my best react project I've ever made. It has dashboard functionality. Authentication, CRUD, and many more.",
+        "tech": ["React", "MongoDB", "NodeJS"],
+        "img": "https://i.ibb.co/4VSMMbz/motoparts-bd.jpg",
+        "type": "Service",
+        "liveLink": "https://motorcycle-parts-manufac-3e321.web.app/"
     }
 ]

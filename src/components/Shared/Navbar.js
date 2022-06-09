@@ -52,6 +52,15 @@ function Navbar() {
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/sayedmdsafwan"
+                        >
+                            GitHub
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

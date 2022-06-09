@@ -1,7 +1,7 @@
 import React from "react";
 import contactImg from "../../images/contact.png";
 import { GoLocation } from "react-icons/go";
-import { BsFacebook, BsLinkedin, BsTelephone } from "react-icons/bs";
+import { BsFacebook, BsGithub, BsLinkedin, BsTelephone } from "react-icons/bs";
 import { BiEnvelope } from "react-icons/bi";
 
 const Contact = () => {
@@ -74,14 +74,21 @@ const Contact = () => {
                             rel="noreferrer"
                             href="https://facebook.com/safwan.sayed.09"
                         >
-                            <BsFacebook size={28} />
+                            <BsFacebook size={26} />
                         </a>
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href="https://www.linkedin.com/in/safwan404/"
+                            href="https://www.linkedin.com/in/safwan98/"
                         >
-                            <BsLinkedin size={28} />
+                            <BsLinkedin size={26} />
+                        </a>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/sayedmdsafwan"
+                        >
+                            <BsGithub size={25} />
                         </a>
                     </div>
                 </div>
