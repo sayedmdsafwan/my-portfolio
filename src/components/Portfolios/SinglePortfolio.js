@@ -31,7 +31,11 @@ const SinglePortfolio = () => {
 
                 {portfolio.liveLink && (
                     <div className="flex justify-center">
-                        <a href={portfolio.liveLink}>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={portfolio.liveLink}
+                        >
                             <button className="btn btn-outline btn-primary">
                                 <BsLink45Deg size={24} className="mr-1" /> Visit
                                 Website
