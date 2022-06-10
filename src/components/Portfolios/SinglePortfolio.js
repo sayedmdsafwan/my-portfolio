@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Loading from "../Shared/Loading";
 import NavbarOther from "../Shared/NavbarOther";
 import { BsLink45Deg } from "react-icons/bs";
+import { FiGithub } from "react-icons/fi";
 
 const SinglePortfolio = () => {
     const { portfolioId } = useParams();
@@ -30,21 +31,33 @@ const SinglePortfolio = () => {
                 </h2>
 
                 {portfolio.liveLink && (
-                    <div className="flex justify-center">
+                    <div className="flex gap-4 justify-center">
                         <a
                             target="_blank"
                             rel="noreferrer"
                             href={portfolio.liveLink}
                         >
-                            <button className="btn btn-outline btn-primary">
-                                <BsLink45Deg size={24} className="mr-1" /> Visit
+                            <button className="btn btn-sm btn-outline btn-primary">
+                                <BsLink45Deg size={20} className="mr-1" /> Visit
                                 Website
                             </button>
                         </a>
+                        {portfolio.githubLink && (
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href={portfolio.githubLink}
+                            >
+                                <button className="btn btn-sm btn-outline btn-secondary">
+                                    <FiGithub size={15} className="mr-1" />{" "}
+                                    GitHub Code
+                                </button>
+                            </a>
+                        )}
                     </div>
                 )}
             </div>
-            <section className="max-w-4xl mx-auto py-20">
+            <section className="max-w-5xl mx-auto py-20">
                 <div className="hero">
                     <div className="hero-content flex-col lg:flex-row gap-14">
                         <img
