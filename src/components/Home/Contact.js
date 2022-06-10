@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import contactImg from "../../images/contact.png";
 import { GoLocation } from "react-icons/go";
 import { BsFacebook, BsGithub, BsLinkedin, BsTelephone } from "react-icons/bs";
 import { BiEnvelope } from "react-icons/bi";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_1zwikb3",
+                "template_082jzxe",
+                form.current,
+                "46QSj8fAcC4hNSReu"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+
+        e.target.reset();
+        toast.success("Message sent successfully!");
+    };
+
     return (
         <div id="contact" className="my-20  px-6 lg:px-32">
             <h2 className="text-center text-5xl my-14 font-extralight">
@@ -18,7 +45,7 @@ const Contact = () => {
                     <span className="text-secondary uppercase">
                         Have a project? I would love to help you
                     </span>
-                    <form className="mt-6">
+                    <form ref={form} onSubmit={sendEmail} className="mt-6">
                         <div className="form-control w-full ">
                             <label className="label">
                                 <span className="label-text text-gray-400">
@@ -27,6 +54,8 @@ const Contact = () => {
                             </label>
                             <input
                                 type="text"
+                                name="from_name"
+                                required
                                 className="input input-bordered w-full "
                             />
                         </div>
@@ -38,6 +67,8 @@ const Contact = () => {
                             </label>
                             <input
                                 type="Email"
+                                name="from_email"
+                                required
                                 className="input input-bordered w-full"
                             />
                         </div>
@@ -47,7 +78,11 @@ const Contact = () => {
                                     Message
                                 </span>
                             </label>
-                            <textarea className="textarea textarea-bordered h-24"></textarea>
+                            <textarea
+                                required
+                                name="message"
+                                className="textarea textarea-bordered h-24"
+                            ></textarea>
                         </div>
                         <input
                             type="submit"

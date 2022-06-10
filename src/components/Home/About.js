@@ -74,10 +74,10 @@ const About = () => {
                                 was a little better for each project.
                             </p>
                             <p className="my-5 tracking-wider">
-                                I've heard of WordPress before, but I haven't
-                                really looked into it. It all changed when we
-                                decided it was time to expand our skill set to
-                                realize our website design project.
+                                I've heard of React before, but I haven't really
+                                looked into it. I knew JAVASCRIPT before. It all
+                                changed when I decided it was time to expand my
+                                skill set to realize my website design project.
                             </p>
                         </div>
                     </div>

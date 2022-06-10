@@ -5,6 +5,8 @@ import Home from "./components/Home/Home";
 import AllPortfolios from "./components/Portfolios/AllPortfolios";
 import SinglePortfolio from "./components/Portfolios/SinglePortfolio";
 import Footer from "./components/Shared/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
     return (
@@ -12,7 +14,7 @@ function App() {
             <ScrollToTop
                 smooth={true}
                 component={
-                    <p className="block flex items-center justify-center">
+                    <p className="flex items-center justify-center">
                         <BsArrowUp />
                     </p>
                 }
@@ -27,6 +29,7 @@ function App() {
                 />
             </Routes>
             <Footer />
+            <ToastContainer />
         </>
     );
 }
